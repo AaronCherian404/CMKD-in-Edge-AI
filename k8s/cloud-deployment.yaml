@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloud-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cloud-service
+  template:
+    metadata:
+      labels:
+        app: cloud-service
+    spec:
+      containers:
+      - name: cloud-service
+        image: cmkd/cloud-service:latest
+        ports:
+        - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cloud-service
+spec:
+  selector:
+    app: cloud-service
+  ports:
+  - port: 8000
+    targetPort: 8000
+  type: LoadBalancer

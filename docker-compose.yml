@@ -1,0 +1,22 @@
+version: '3'
+services:
+  cloud-service:
+    build: ./cloud
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./cloud/app:/app
+    
+  fog-service:
+    build: ./fog
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./fog/app:/app
+    
+  edge-service:
+    build: ./edge
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./edge/app:/app
