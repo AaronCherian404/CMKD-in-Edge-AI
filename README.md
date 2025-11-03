@@ -1,7 +1,8 @@
 # ⚡ Cross-Modal Knowledge Distillation for Ultra-Lightweight Edge AI (Patent Pending)
 
-Implemented **dynamic resource allocation algorithms** using **PyTorch**, achieving **92.3% accuracy** while reducing **memory footprint by 83.4%** and **latency by 74.5%** compared to teacher models.  
 This work pioneers a **cross-modal knowledge distillation framework** optimized for **edge AI deployment**, integrating **modality-specific compression** and **lightweight feature alignment** techniques.  
+Implemented **dynamic resource allocation algorithms** using **PyTorch**, achieving **92.3% accuracy** while reducing **memory footprint by 83.4%** and **latency by 74.5%** compared to teacher models.  
+
 
 > 🔒 *Patent Pending: Cross-Modal Knowledge Distillation for Ultra-Lightweight Edge AI (Filed 2025)*  
 
